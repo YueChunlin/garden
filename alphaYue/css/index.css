@@ -1,0 +1,423 @@
+body,div,p,a,span,ul,li,h3{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 10px;
+}
+div,a,li,img,ul{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+.clearfix:after,.clearfix:before{
+    content:'';
+    display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+.fl{
+    float: left;
+}
+.fr{
+  float: right;
+}
+.bd{
+    border: 1px solid red;
+}
+.logo-nav{
+    width: 1000px;
+    margin: 0 auto;
+    padding:15px 0;
+}
+.head-nav{
+    padding-right: 20px;
+    z-index: 1;
+}
+.head-nav>li{
+    width: 90px;
+    float: left;
+    position: relative;
+}
+.head-nav>li>a{
+    display: block;
+    width:50px;
+    margin:0 20px ;
+    line-height: 59px;
+    font-size: 20px;
+    text-align:center;
+}
+.submenu-arrow{
+    background: url("../img/ico_down_arrow.png") no-repeat 50% ;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin: 0 auto;
+    background-color: white;
+}
+.head-nav li a:hover{
+    color: #ff6600;
+}
+.headnav-a-bor{
+    border-bottom: 2px solid #ff6600;
+}
+.head-nav ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:54px;
+    width: 150%;
+    margin-left: -25%;
+    overflow: hidden;
+    background-color:rgba(200,200,200,.5);
+    padding-top: 5px;
+    z-index: 99999;
+}
+.head-nav ul a{
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    line-height: 30px;
+}
+.head-nav ul a:hover{
+    background-color: #00adef;
+}
+/*-------------banner------------*/
+.banner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 2.5rem;
+}
+.banner ul{
+    position: absolute;
+    width: 600%;
+    top:0;
+    left: -100%;
+    font-size: 0;
+}
+.banner ul li{
+    float: left;
+    width: 16.6666%;
+}
+.banner ul li img{
+    /*width: 100%;*/
+    height: 2.5rem;
+}
+.ban-next,.ban-prev{
+    position: absolute;
+    top:50%;
+    margin-top: -25px;
+}
+.ban-next{
+    right: 20px;
+}
+.ban-prev{
+    left: 20px;
+}
+.ban-sp{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;margin-left: -30px;
+}
+.ban-sp span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgba(100,100,100,.7);
+}
+.ban-sp .sp-select{
+    background-color:#ff6600;
+}
+
+/*--------download------*/
+
+.download{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.download ul li{
+    float: left;
+    text-align: center;
+}
+.download ul li a{
+    display: block;
+    width: 100px;
+    margin: 15px 20px 0;
+}
+.down-pic{
+    transition: .3s;
+    margin: 0 auto;
+    width: 74px;
+    height: 64px;
+    margin-bottom: 6px;
+}
+.download ul li:nth-child(1) .down-pic{
+    background: url(../img/ico.png) no-repeat 0 0;
+}
+.download ul li:nth-child(2) .down-pic{
+    background: url(../img/ico.png) no-repeat -144px 0;
+}
+.download ul li:nth-child(3) .down-pic{
+    background: url(../img/ico.png) no-repeat -284px 0;
+}
+.download ul li:nth-child(4) .down-pic{
+    background: url(../img/ico.png) no-repeat -427px 0;
+}
+.download ul li:nth-child(5) .down-pic{
+    background: url(../img/ico.png) no-repeat -569px 0;
+}
+.download ul li:nth-child(6) .down-pic{
+    background: url(../img/ico.png) no-repeat -711px 0;
+}
+
+.download ul li:nth-child(1):hover .down-pic{
+    background: url(../img/ico.png) no-repeat 0px -120px;
+}
+.download ul li:nth-child(2):hover .down-pic{
+    background: url(../img/ico.png) no-repeat -144px -120px;
+}
+.download ul li:nth-child(3):hover .down-pic{
+    background: url(../img/ico.png) no-repeat -284px -120px;
+}
+.download ul li:nth-child(4):hover .down-pic{
+    background: url(../img/ico.png) no-repeat -427px -120px;
+}
+.download ul li:nth-child(5):hover .down-pic{
+    background: url(../img/ico.png) no-repeat -569px -120px;
+}
+.download ul li:nth-child(6):hover .down-pic{
+    background: url(../img/ico.png) no-repeat -711px -120px;
+}
+
+/*-----------news-------------*/
+.news{
+    width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+.new-p-t h3{
+    font-size: 24px;
+    margin: 15px 0;
+}
+.new-p-t h3 span{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.new-picinfo{
+    background-color: #999;
+    width: 290px;
+}
+.new-picinfo p a{
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.new-p-t ul li a{
+    display: block;
+    margin: 10px 0;
+    color: #666;
+}
+.news>div:nth-child(2){
+    margin:0 65px;
+}
+
+/*----------foot---------------*/
+.foot{
+    background-color: #333;
+    width: 100%;
+}
+.footer{
+    width: 1000px;
+    margin: 0 auto;
+}
+.info{
+padding-top: 20px;
+}
+.info ul{
+    width: 150px;
+    margin-right: 15px;
+    float: left;
+}
+.info ul li{
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+}
+.info ul li:nth-child(1) a{
+    font-size: 20px;
+}
+.info ul li a{
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+}
+.info ul li a:hover{
+    color: #ff6600;
+}
+.mult-device{
+    position: relative;
+}
+.mult-device li:nth-child(1) a{
+    border: 1px solid #999;
+    padding-bottom: 5px;
+    background: url("../img/ico_lang_arrow.png") no-repeat right;
+}
+.mult-device li a span{
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    vertical-align: top;
+}
+.mult-device li:nth-child(1) a span{
+    background:  url("../img/ico.png") no-repeat -2px -250px;
+}
+.mult-device li:nth-child(2) a span{
+    background: url("../img/ico.png") no-repeat -1px -284px;
+}
+.mult-device li:nth-child(3) a span{
+     background: url("../img/ico.png") no-repeat -1px -313px;
+ }
+.mult-device li:nth-child(4) a span{
+    background: url("../img/ico.png") no-repeat -1px -342px;
+}
+.mult-device li:nth-child(5) a span{
+    background: url("../img/ico.png") no-repeat -1px -380px;
+}
+.mult-device li:nth-child(6) a span{
+    background: url("../img/ico.png") no-repeat -1px -412px;
+}
+.mult-device li:nth-child(7) a span{
+    background: url("../img/ico.png") no-repeat -1px -448px;
+}
+/*---------*/
+.mult-device li:nth-child(2) a:hover span{
+    background: url("../img/ico.png") no-repeat -41px -284px;
+}
+.mult-device li:nth-child(3) a:hover span{
+    background: url("../img/ico.png") no-repeat -41px -313px;
+}
+.mult-device li:nth-child(4) a:hover span{
+    background: url("../img/ico.png") no-repeat -41px -342px;
+}
+.mult-device li:nth-child(5) a:hover span{
+    background: url("../img/ico.png") no-repeat -41px -380px;
+}
+.mult-device li:nth-child(6) a:hover span{
+    background: url("../img/ico.png") no-repeat -41px -412px;
+}
+.mult-device li:nth-child(7) a:hover span{
+    background: url("../img/ico.png") no-repeat -41px -448px;
+}
+/*-----------language--------*/
+.language{
+    position: absolute;
+    top:-216px;
+    line-height: 26px;
+    background-color: white;
+}
+.language div{
+    position: relative;
+    display: none;
+}
+.mult-device .language div a{
+    border: 1px solid #777;
+    border-width: 0 1px 0 1px;
+    color: black;
+}
+.language div a:hover{
+    background-color: rgba(200,200,200,.5);
+}
+.language div span{
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 8px;
+    background: url("../img/ico_down_arrow.png") no-repeat 123px 0;
+    /*background-color:#333;*/
+    transform:rotate(180deg);
+}
+/*---------links--------*/
+.glinks{
+    padding: 8px 0;
+    border-top: 1px dashed #999;
+    border-bottom: 1px dashed #999;
+    line-height: 26px;
+    height: 42px;
+    overflow: hidden;
+    position: relative;
+    padding-right: 50px;
+    transition: 0.5s all;
+    color: #666;
+
+}
+.glinks span{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/ico.png") no-repeat -105px -248px;
+}
+.contanier .height{
+    height:68px;
+}
+.contanier .height span{
+    background: url("../img/ico.png") no-repeat -125px -248px;
+}
+.flinks{
+    padding: 8px 0;
+    border-bottom: 1px dashed #999;
+    line-height: 26px;
+    height: 42px;
+    overflow: hidden;
+    position: relative;
+    padding-right: 50px;
+    transition: 0.5s all;
+    color: #666;
+}
+.flinks span{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/ico.png") no-repeat -105px -248px;
+}
+.contanier .height1{
+    height:90px;
+}
+.contanier .height1 span{
+    background: url("../img/ico.png") no-repeat -125px -248px;
+}
+.flinks a,.glinks a{
+    color: #999;
+}
+/*------------copyright------*/
+.copyright p{
+    padding:20px 100px 60px 15px;
+    color: #666;
+    line-height: 18px;
+}
+.copyright img{
+    padding-top:30px;
+}
